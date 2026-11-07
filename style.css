@@ -3,12 +3,14 @@
   margin: 0;
   padding: 0;
   user-select: none; /* Makes it feel like a real app, not a webpage */
+  -webkit-user-select: none;
   font-family: sans-serif;
 }
 
 body {
   background-color: #121212;
   color: #ffffff;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -40,6 +42,8 @@ input {
   color: white;
   font-size: 16px;
   outline: none;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 button {
@@ -69,7 +73,12 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   animation: fadeIn 0.2s ease;
+}
+
+li span {
+  word-break: break-word;
 }
 
 .delete-btn {
@@ -80,6 +89,7 @@ li {
   border-radius: 5px;
   font-size: 12px;
   width: auto;
+  flex-shrink: 0;
 }
 
 @keyframes fadeIn {

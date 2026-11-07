@@ -1,14 +1,29 @@
 {
   "short_name": "QuickTask",
   "name": "QuickTask Manager",
+  "description": "Easy-to-use todo app",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/906/906334.png",
+      "src": "icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": "index.html",
+  "start_url": "./",
+  "scope": "./",
   "background_color": "#121212",
   "theme_color": "#121212",
   "display": "standalone",
